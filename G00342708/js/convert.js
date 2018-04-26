@@ -73,9 +73,21 @@ function fToK(){
 
   var measure = parseInt(document.getElementById("value1").value);
 
+  
+  //alert function
+  if(!measure){
+	  alert("Please enter a value");
+  }
+else if(measure <= 0) {
+alert("Please enter a value greater than 0")
+}
+
+else if(measure > 0) {
+  
   var kilometers = measure * 1.60934;
   var message = measure + ' miles converts to ' + kilometers + ' kilometers.';
   console.log(message);
   document.getElementById("resultsentence").innerHTML = message;
-
 }
+}
+//End of Script
