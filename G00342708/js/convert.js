@@ -2,6 +2,8 @@
 function fToM(){
 
   var measure = parseInt(document.getElementById("value1").value);
+  
+  
 //alert function
   if(!measure){
 	  alert("Please enter a value");
@@ -9,6 +11,8 @@ function fToM(){
 else if(measure <= 0) {
 alert("Please enter a value greater than 0")
 }
+
+//Calculation
 else if(measure > 0) {
   
   var meters = measure * 0.3048;
@@ -23,11 +27,23 @@ function fToC(){
 
   var measure = parseInt(document.getElementById("value1").value);
 
+  
+  //alert function
+  if(!measure){
+	  alert("Please enter a value");
+  }
+else if(measure <= 0) {
+alert("Please enter a value greater than 0")
+}
+
+//Calculation
+else if(measure > 0) {
+  
   var centimeters = measure * 2.54;
   var message = measure + ' inches converts to ' + centimeters + ' centimeters.';
   console.log(message);
   document.getElementById("resultsentence").innerHTML = message;
-
+}
 }
 
 //Yards to meters function
