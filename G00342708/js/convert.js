@@ -2,12 +2,20 @@
 function fToM(){
 
   var measure = parseInt(document.getElementById("value1").value);
-
+//alert function
+  if(!measure){
+	  alert("Please enter a value");
+  }
+else if(measure <= 0) {
+alert("Please enter a value greater than 0")
+}
+else if(measure > 0) {
+  
   var meters = measure * 0.3048;
   var message = measure + ' feet converts to ' + meters + ' meters.';
   console.log(message);
   document.getElementById("resultsentence").innerHTML = message;
-
+}
 }
 
 //Inches to centimeters function
