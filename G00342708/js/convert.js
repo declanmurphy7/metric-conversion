@@ -58,7 +58,6 @@ else if(measure <= 0) {
 alert("Please enter a value greater than 0")
 }
 
-//Calculation
 else if(measure > 0) {
   
   var meters = measure * 0.9144;
