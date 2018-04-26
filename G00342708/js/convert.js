@@ -27,7 +27,7 @@ function fToY(){
 
   var measure = parseInt(document.getElementById("value1").value);
 
-  var meters = measure * 0.3048;
+  var meters = measure * 0.9144;
   var message = measure + ' yards converts to ' + meters + ' meters.';
   console.log(message);
   document.getElementById("resultsentence").innerHTML = message;
