@@ -12,7 +12,6 @@ else if(measure <= 0) {
 alert("Please enter a value greater than 0")
 }
 
-//Calculation
 else if(measure > 0) {
   
   var meters = measure * 0.3048;
@@ -36,7 +35,6 @@ else if(measure <= 0) {
 alert("Please enter a value greater than 0")
 }
 
-//Calculation
 else if(measure > 0) {
   
   var centimeters = measure * 2.54;
@@ -51,12 +49,25 @@ function fToY(){
 
   var measure = parseInt(document.getElementById("value1").value);
 
+  
+  //alert function
+  if(!measure){
+	  alert("Please enter a value");
+  }
+else if(measure <= 0) {
+alert("Please enter a value greater than 0")
+}
+
+//Calculation
+else if(measure > 0) {
+  
   var meters = measure * 0.9144;
   var message = measure + ' yards converts to ' + meters + ' meters.';
   console.log(message);
   document.getElementById("resultsentence").innerHTML = message;
-
 }
+}
+
 //Miles to kilometers function
 function fToK(){
 
